@@ -50,7 +50,7 @@ func main() {
 	for scanner.Scan() {
 		row := scanner.Text()
 		data := strings.Split(row, ",")
-		if len(data) == 2 {
+		if len(data) == 2 && data[0] != "SKIP" {
 			params := &s3.DeleteObjectInput{
 				Bucket: aws.String(data[0]),
 				Key:    aws.String(data[1]),
