@@ -19,7 +19,7 @@ type SlackPayload struct {
 	IconEmoji string `json:"icon_emoji"`
 }
 
-const SlackAPIUrl string = "https://hooks.slack.com/services/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"
+const SlackAPIUrl string = "##TOKEN##"
 
 var slackNotification bool
 
